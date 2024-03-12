@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		31C2663E2B9EFE5A00699A23 /* TapNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C2663D2B9EFE5A00699A23 /* TapNApp.swift */; };
-		31C266402B9EFE5A00699A23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C2663F2B9EFE5A00699A23 /* ContentView.swift */; };
-		31C266422B9EFE5B00699A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C266412B9EFE5B00699A23 /* Assets.xcassets */; };
+		31C266402B9EFE5A00699A23 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C2663F2B9EFE5A00699A23 /* HomeView.swift */; };
+		31C266422B9EFE5B00699A23 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C266412B9EFE5B00699A23 /* ColorAssets.xcassets */; };
 		31C266452B9EFE5B00699A23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C266442B9EFE5B00699A23 /* Preview Assets.xcassets */; };
+		31C2664D2B9F003500699A23 /* ImageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C2664C2B9F003500699A23 /* ImageAssets.xcassets */; };
+		31C2664F2B9F01B600699A23 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C2664E2B9F01B600699A23 /* ThemeManager.swift */; };
+		31C266512B9F137200699A23 /* TypeButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C266502B9F137200699A23 /* TypeButtonStyle.swift */; };
+		31C266532B9F138E00699A23 /* StartButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C266522B9F138E00699A23 /* StartButtonStyle.swift */; };
+		31C266552B9F13BB00699A23 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C266542B9F13BB00699A23 /* HomeViewModel.swift */; };
+		31C266582B9F2FC900699A23 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C266572B9F2FC900699A23 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		31C2663A2B9EFE5A00699A23 /* TapN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C2663D2B9EFE5A00699A23 /* TapNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapNApp.swift; sourceTree = "<group>"; };
-		31C2663F2B9EFE5A00699A23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		31C266412B9EFE5B00699A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31C2663F2B9EFE5A00699A23 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		31C266412B9EFE5B00699A23 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
 		31C266442B9EFE5B00699A23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31C2664C2B9F003500699A23 /* ImageAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageAssets.xcassets; sourceTree = "<group>"; };
+		31C2664E2B9F01B600699A23 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		31C266502B9F137200699A23 /* TypeButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeButtonStyle.swift; sourceTree = "<group>"; };
+		31C266522B9F138E00699A23 /* StartButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonStyle.swift; sourceTree = "<group>"; };
+		31C266542B9F13BB00699A23 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		31C266572B9F2FC900699A23 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +63,14 @@
 		31C2663C2B9EFE5A00699A23 /* TapN */ = {
 			isa = PBXGroup;
 			children = (
+				31C266562B9F2FB000699A23 /* Utility */,
+				31C2664B2B9EFFC400699A23 /* Resource */,
 				31C2663D2B9EFE5A00699A23 /* TapNApp.swift */,
-				31C2663F2B9EFE5A00699A23 /* ContentView.swift */,
-				31C266412B9EFE5B00699A23 /* Assets.xcassets */,
+				31C2663F2B9EFE5A00699A23 /* HomeView.swift */,
 				31C266432B9EFE5B00699A23 /* Preview Content */,
+				31C266502B9F137200699A23 /* TypeButtonStyle.swift */,
+				31C266522B9F138E00699A23 /* StartButtonStyle.swift */,
+				31C266542B9F13BB00699A23 /* HomeViewModel.swift */,
 			);
 			path = TapN;
 			sourceTree = "<group>";
@@ -65,6 +81,24 @@
 				31C266442B9EFE5B00699A23 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		31C2664B2B9EFFC400699A23 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				31C266412B9EFE5B00699A23 /* ColorAssets.xcassets */,
+				31C2664C2B9F003500699A23 /* ImageAssets.xcassets */,
+				31C2664E2B9F01B600699A23 /* ThemeManager.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		31C266562B9F2FB000699A23 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				31C266572B9F2FC900699A23 /* Constants.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				31C266452B9EFE5B00699A23 /* Preview Assets.xcassets in Resources */,
-				31C266422B9EFE5B00699A23 /* Assets.xcassets in Resources */,
+				31C266422B9EFE5B00699A23 /* ColorAssets.xcassets in Resources */,
+				31C2664D2B9F003500699A23 /* ImageAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31C266402B9EFE5A00699A23 /* ContentView.swift in Sources */,
+				31C266532B9F138E00699A23 /* StartButtonStyle.swift in Sources */,
+				31C266552B9F13BB00699A23 /* HomeViewModel.swift in Sources */,
+				31C2664F2B9F01B600699A23 /* ThemeManager.swift in Sources */,
+				31C266402B9EFE5A00699A23 /* HomeView.swift in Sources */,
+				31C266582B9F2FC900699A23 /* Constants.swift in Sources */,
 				31C2663E2B9EFE5A00699A23 /* TapNApp.swift in Sources */,
+				31C266512B9F137200699A23 /* TypeButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
