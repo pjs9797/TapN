@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		312BF58A2BA29E6D000FB5EE /* SuccessPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF5892BA29E6D000FB5EE /* SuccessPopupView.swift */; };
 		31C2663E2B9EFE5A00699A23 /* TapNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C2663D2B9EFE5A00699A23 /* TapNApp.swift */; };
 		31C266402B9EFE5A00699A23 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C2663F2B9EFE5A00699A23 /* HomeView.swift */; };
 		31C266422B9EFE5B00699A23 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C266412B9EFE5B00699A23 /* ColorAssets.xcassets */; };
@@ -17,9 +18,15 @@
 		31C266532B9F138E00699A23 /* StartButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C266522B9F138E00699A23 /* StartButtonStyle.swift */; };
 		31C266552B9F13BB00699A23 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C266542B9F13BB00699A23 /* HomeViewModel.swift */; };
 		31C266582B9F2FC900699A23 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C266572B9F2FC900699A23 /* Constants.swift */; };
+		31C2665A2BA05ED600699A23 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C266592BA05ED600699A23 /* GameView.swift */; };
+		31C2665C2BA05EDF00699A23 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C2665B2BA05EDF00699A23 /* GameViewModel.swift */; };
+		31C2665E2BA05EF200699A23 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C2665D2BA05EF200699A23 /* GameModel.swift */; };
+		31C266632BA0952500699A23 /* PlayButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C266622BA0952500699A23 /* PlayButtonStyle.swift */; };
+		31C266652BA0954000699A23 /* RefreshButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C266642BA0954000699A23 /* RefreshButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		312BF5892BA29E6D000FB5EE /* SuccessPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPopupView.swift; sourceTree = "<group>"; };
 		31C2663A2B9EFE5A00699A23 /* TapN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C2663D2B9EFE5A00699A23 /* TapNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapNApp.swift; sourceTree = "<group>"; };
 		31C2663F2B9EFE5A00699A23 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -31,6 +38,11 @@
 		31C266522B9F138E00699A23 /* StartButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonStyle.swift; sourceTree = "<group>"; };
 		31C266542B9F13BB00699A23 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		31C266572B9F2FC900699A23 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		31C266592BA05ED600699A23 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		31C2665B2BA05EDF00699A23 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		31C2665D2BA05EF200699A23 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		31C266622BA0952500699A23 /* PlayButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButtonStyle.swift; sourceTree = "<group>"; };
+		31C266642BA0954000699A23 /* RefreshButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +56,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		312BF5862BA29E25000FB5EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				31C2663F2B9EFE5A00699A23 /* HomeView.swift */,
+				31C266592BA05ED600699A23 /* GameView.swift */,
+				312BF5892BA29E6D000FB5EE /* SuccessPopupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		312BF5872BA29E30000FB5EE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				31C266542B9F13BB00699A23 /* HomeViewModel.swift */,
+				31C2665B2BA05EDF00699A23 /* GameViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		312BF5882BA29E4A000FB5EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31C2665D2BA05EF200699A23 /* GameModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		31C266312B9EFE5A00699A23 = {
 			isa = PBXGroup;
 			children = (
@@ -63,14 +102,14 @@
 		31C2663C2B9EFE5A00699A23 /* TapN */ = {
 			isa = PBXGroup;
 			children = (
+				312BF5882BA29E4A000FB5EE /* Models */,
+				312BF5872BA29E30000FB5EE /* ViewModels */,
+				312BF5862BA29E25000FB5EE /* Views */,
+				31C266612BA0950D00699A23 /* ButtonStyle */,
 				31C266562B9F2FB000699A23 /* Utility */,
 				31C2664B2B9EFFC400699A23 /* Resource */,
 				31C2663D2B9EFE5A00699A23 /* TapNApp.swift */,
-				31C2663F2B9EFE5A00699A23 /* HomeView.swift */,
 				31C266432B9EFE5B00699A23 /* Preview Content */,
-				31C266502B9F137200699A23 /* TypeButtonStyle.swift */,
-				31C266522B9F138E00699A23 /* StartButtonStyle.swift */,
-				31C266542B9F13BB00699A23 /* HomeViewModel.swift */,
 			);
 			path = TapN;
 			sourceTree = "<group>";
@@ -99,6 +138,17 @@
 				31C266572B9F2FC900699A23 /* Constants.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		31C266612BA0950D00699A23 /* ButtonStyle */ = {
+			isa = PBXGroup;
+			children = (
+				31C266502B9F137200699A23 /* TypeButtonStyle.swift */,
+				31C266522B9F138E00699A23 /* StartButtonStyle.swift */,
+				31C266622BA0952500699A23 /* PlayButtonStyle.swift */,
+				31C266642BA0954000699A23 /* RefreshButtonStyle.swift */,
+			);
+			path = ButtonStyle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,12 +222,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C2665C2BA05EDF00699A23 /* GameViewModel.swift in Sources */,
 				31C266532B9F138E00699A23 /* StartButtonStyle.swift in Sources */,
+				31C266632BA0952500699A23 /* PlayButtonStyle.swift in Sources */,
+				31C266652BA0954000699A23 /* RefreshButtonStyle.swift in Sources */,
 				31C266552B9F13BB00699A23 /* HomeViewModel.swift in Sources */,
 				31C2664F2B9F01B600699A23 /* ThemeManager.swift in Sources */,
 				31C266402B9EFE5A00699A23 /* HomeView.swift in Sources */,
+				312BF58A2BA29E6D000FB5EE /* SuccessPopupView.swift in Sources */,
+				31C2665E2BA05EF200699A23 /* GameModel.swift in Sources */,
 				31C266582B9F2FC900699A23 /* Constants.swift in Sources */,
 				31C2663E2B9EFE5A00699A23 /* TapNApp.swift in Sources */,
+				31C2665A2BA05ED600699A23 /* GameView.swift in Sources */,
 				31C266512B9F137200699A23 /* TypeButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ import SwiftUI
 struct TapNApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

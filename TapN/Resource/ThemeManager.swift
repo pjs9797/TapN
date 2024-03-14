@@ -14,5 +14,7 @@ struct ThemeManager {
     struct Images {
         static let logo = Image("logo")
         static let setting = Image("setting")
+        static let back = Image("back")
+        static let refresh = Image("refresh")
     }
 }

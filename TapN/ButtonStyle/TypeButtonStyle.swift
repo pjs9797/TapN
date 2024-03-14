@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct TypeButtonStyle: ButtonStyle {
-    @StateObject var viewModel: HomeViewViewModel
+    @ObservedObject var viewModel: HomeViewViewModel
     var type: String
     
     func makeBody(configuration: Configuration) -> some View {
