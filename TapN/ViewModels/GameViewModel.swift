@@ -1,6 +1,7 @@
 import Foundation
 import SwiftUI
 import Combine
+import CoreData
 
 class GameViewModel: ObservableObject {
     @Published var selectedType: String
@@ -10,13 +11,15 @@ class GameViewModel: ObservableObject {
     @Published var gameEnded = false
     @Published var columns: [GridItem] = []
     
+    private var context: NSManagedObjectContext
     private var gridSize = 0
     private var correctTapCount = 0
     private var timer: AnyCancellable?
     private var startTime: Date?
     
-    init(selectedType: String){
+    init(selectedType: String, context: NSManagedObjectContext){
         self.selectedType = selectedType
+        self.context = context
         updateGridColumns(for: selectedType)
         switch selectedType{
         case "1 To 9":
@@ -88,6 +91,7 @@ class GameViewModel: ObservableObject {
             correctTapCount += 1
             if correctTapCount == gridSize {
                 stopGame()
+                GameDataManager.shared.saveGameRecord(gameType: selectedType, record: timerString, context: context)
             }
             return true
         }

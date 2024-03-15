@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Environment(\.managedObjectContext) private var managedObjectContext
     @StateObject private var homeViewModel = HomeViewViewModel()
     
     var body: some View {
@@ -33,7 +34,7 @@ struct HomeView: View {
                 }
                 Spacer()
                     .frame(height: 60*Constants.standardHeight)
-                NavigationLink(destination: GameView(gameViewModel: GameViewModel(selectedType: homeViewModel.selectedType ?? "Unknown"))) {
+                NavigationLink(destination: GameView(gameViewModel: GameViewModel(selectedType: homeViewModel.selectedType ?? "Unknown", context: managedObjectContext))) {
                     Text("시작하기")
                         .modifier(StartTextStyle(isEnabled: homeViewModel.isStartButtonEnabled))
                 }

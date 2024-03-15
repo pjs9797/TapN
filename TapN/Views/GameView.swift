@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct GameView: View {
+    @Environment(\.managedObjectContext) private var managedObjectContext
     @StateObject var gameViewModel: GameViewModel
     @Environment(\.presentationMode) var presentationMode
     
@@ -23,6 +24,16 @@ struct GameView: View {
                             .padding(.leading, 20)
                             .padding(.top, 13*Constants.standardHeight)
                             Spacer()
+                            NavigationLink(destination: RecordView()) {
+                                ThemeManager.Images.record
+                                    .renderingMode(.template)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 35*Constants.standardHeight, height: 35*Constants.standardHeight)
+                                    .foregroundColor(ThemeManager.Colors.prColor06)
+                                    .padding(.trailing, 20)
+                                    .padding(.top, 13*Constants.standardHeight)
+                            }
                         }
                         Text(gameViewModel.selectedType)
                             .foregroundColor(ThemeManager.Colors.prColor06)
@@ -96,7 +107,7 @@ struct GameView: View {
 struct Previews_GameView: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone SE (3rd generation)", "iPhone 15 Pro"], id: \.self) { deviceName in
-            GameView(gameViewModel: GameViewModel(selectedType: "1 To 9"))
+            GameView(gameViewModel: GameViewModel(selectedType: "1 To 9", context: GameDataManager.shared.container.viewContext))
                 .previewDevice(PreviewDevice(rawValue: deviceName))
         }
     }

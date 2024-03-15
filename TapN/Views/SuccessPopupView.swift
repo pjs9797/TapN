@@ -33,12 +33,3 @@ struct SuccessPopupView: View {
         )
     }
 }
-
-struct Previews_SuccessPopupView: PreviewProvider {
-    static var previews: some View {
-        ForEach(["iPhone SE (3rd generation)", "iPhone 15 Pro"], id: \.self) { deviceName in
-            SuccessPopupView(gameViewModel: GameViewModel(selectedType: "1 To 9"))
-                .previewDevice(PreviewDevice(rawValue: deviceName))
-        }
-    }
-}
