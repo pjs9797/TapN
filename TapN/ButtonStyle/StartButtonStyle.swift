@@ -5,7 +5,7 @@ struct StartTextStyle: ViewModifier {
     
     func body(content: Content) -> some View {
         content
-            .font(.system(size: 30*Constants.standartFont, weight: .regular, design: .rounded))
+            .font(ThemeManager.Fonts.GaeguBold(size: 40*Constants.standartFont))
             .frame(width: 350*Constants.standardWidth, height: 70*Constants.standardHeight)
             .background(isEnabled ? ThemeManager.Colors.prColor06 : Color.white)
             .foregroundColor(isEnabled ? Color.white : ThemeManager.Colors.prColor06)

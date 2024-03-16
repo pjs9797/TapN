@@ -18,6 +18,10 @@
 		312BF5A82BA2E029000FB5EE /* TypeThree+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF5A22BA2E029000FB5EE /* TypeThree+CoreDataClass.swift */; };
 		312BF5A92BA2E029000FB5EE /* TypeThree+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF5A32BA2E029000FB5EE /* TypeThree+CoreDataProperties.swift */; };
 		312BF5AB2BA2E30E000FB5EE /* RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF5AA2BA2E30E000FB5EE /* RecordViewModel.swift */; };
+		312BF5AF2BA41355000FB5EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 312BF5B12BA41355000FB5EE /* Localizable.strings */; };
+		312BF5BA2BA5CFAA000FB5EE /* Gaegu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 312BF5B72BA5CFAA000FB5EE /* Gaegu-Bold.ttf */; };
+		312BF5BB2BA5CFAA000FB5EE /* Gaegu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 312BF5B82BA5CFAA000FB5EE /* Gaegu-Light.ttf */; };
+		312BF5BC2BA5CFAA000FB5EE /* Gaegu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 312BF5B92BA5CFAA000FB5EE /* Gaegu-Regular.ttf */; };
 		31C2663E2B9EFE5A00699A23 /* TapNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C2663D2B9EFE5A00699A23 /* TapNApp.swift */; };
 		31C266402B9EFE5A00699A23 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C2663F2B9EFE5A00699A23 /* HomeView.swift */; };
 		31C266422B9EFE5B00699A23 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C266412B9EFE5B00699A23 /* ColorAssets.xcassets */; };
@@ -47,6 +51,12 @@
 		312BF5A22BA2E029000FB5EE /* TypeThree+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TypeThree+CoreDataClass.swift"; sourceTree = "<group>"; };
 		312BF5A32BA2E029000FB5EE /* TypeThree+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TypeThree+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		312BF5AA2BA2E30E000FB5EE /* RecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewModel.swift; sourceTree = "<group>"; };
+		312BF5B02BA41355000FB5EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		312BF5B22BA41381000FB5EE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		312BF5B32BA5C7BE000FB5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		312BF5B72BA5CFAA000FB5EE /* Gaegu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gaegu-Bold.ttf"; path = "../../../../../Downloads/Gaegu/Gaegu-Bold.ttf"; sourceTree = "<group>"; };
+		312BF5B82BA5CFAA000FB5EE /* Gaegu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gaegu-Light.ttf"; path = "../../../../../Downloads/Gaegu/Gaegu-Light.ttf"; sourceTree = "<group>"; };
+		312BF5B92BA5CFAA000FB5EE /* Gaegu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gaegu-Regular.ttf"; path = "../../../../../Downloads/Gaegu/Gaegu-Regular.ttf"; sourceTree = "<group>"; };
 		31C2663A2B9EFE5A00699A23 /* TapN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C2663D2B9EFE5A00699A23 /* TapNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapNApp.swift; sourceTree = "<group>"; };
 		31C2663F2B9EFE5A00699A23 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -120,6 +130,16 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		312BF5B62BA5CFA1000FB5EE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				312BF5B72BA5CFAA000FB5EE /* Gaegu-Bold.ttf */,
+				312BF5B82BA5CFAA000FB5EE /* Gaegu-Light.ttf */,
+				312BF5B92BA5CFAA000FB5EE /* Gaegu-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		31C266312B9EFE5A00699A23 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +159,7 @@
 		31C2663C2B9EFE5A00699A23 /* TapN */ = {
 			isa = PBXGroup;
 			children = (
+				312BF5B32BA5C7BE000FB5EE /* Info.plist */,
 				31C266562B9F2FB000699A23 /* Utility */,
 				31C2664B2B9EFFC400699A23 /* Resource */,
 				31C266612BA0950D00699A23 /* ButtonStyle */,
@@ -148,6 +169,7 @@
 				31C2663D2B9EFE5A00699A23 /* TapNApp.swift */,
 				312BF5902BA2BD6F000FB5EE /* GameDataManager.swift */,
 				31C266432B9EFE5B00699A23 /* Preview Content */,
+				312BF5B12BA41355000FB5EE /* Localizable.strings */,
 			);
 			path = TapN;
 			sourceTree = "<group>";
@@ -163,6 +185,7 @@
 		31C2664B2B9EFFC400699A23 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				312BF5B62BA5CFA1000FB5EE /* Fonts */,
 				31C266412B9EFE5B00699A23 /* ColorAssets.xcassets */,
 				31C2664C2B9F003500699A23 /* ImageAssets.xcassets */,
 				31C2664E2B9F01B600699A23 /* ThemeManager.swift */,
@@ -231,6 +254,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 31C266312B9EFE5A00699A23;
 			productRefGroup = 31C2663B2B9EFE5A00699A23 /* Products */;
@@ -247,7 +271,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				312BF5BA2BA5CFAA000FB5EE /* Gaegu-Bold.ttf in Resources */,
 				31C266452B9EFE5B00699A23 /* Preview Assets.xcassets in Resources */,
+				312BF5BC2BA5CFAA000FB5EE /* Gaegu-Regular.ttf in Resources */,
+				312BF5AF2BA41355000FB5EE /* Localizable.strings in Resources */,
+				312BF5BB2BA5CFAA000FB5EE /* Gaegu-Light.ttf in Resources */,
 				31C266422B9EFE5B00699A23 /* ColorAssets.xcassets in Resources */,
 				31C2664D2B9F003500699A23 /* ImageAssets.xcassets in Resources */,
 			);
@@ -288,12 +316,25 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		312BF5B12BA41355000FB5EE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				312BF5B02BA41355000FB5EE /* en */,
+				312BF5B22BA41381000FB5EE /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		31C266462B9EFE5B00699A23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -357,6 +398,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -419,6 +461,7 @@
 				DEVELOPMENT_TEAM = 9A5MT7L34S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TapN/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -448,6 +491,7 @@
 				DEVELOPMENT_TEAM = 9A5MT7L34S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TapN/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

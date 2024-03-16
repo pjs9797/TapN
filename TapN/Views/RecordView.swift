@@ -10,7 +10,7 @@ struct RecordView: View {
         
         let attributes: [NSAttributedString.Key:Any] = [
             .foregroundColor : UIColor.white,
-            .font: UIFont.systemFont(ofSize: 18*Constants.standartFont)
+            .font: UIFont(name: "Chalkboard SE", size: 18*Constants.standartFont)
         ]
         UISegmentedControl.appearance().setTitleTextAttributes(attributes, for: .selected)
     }
@@ -30,12 +30,11 @@ struct RecordView: View {
                             .foregroundColor(ThemeManager.Colors.prColor06)
                     }
                     .padding(.leading, 20*Constants.standardWidth)
-                    .padding(.top, 13*Constants.standardHeight)
                     Spacer()
                 }
-                Text("Record")
+                Text(LocalizedStringKey("랭킹"))
                     .foregroundColor(ThemeManager.Colors.prColor06)
-                    .font(.custom("Chalkboard SE", size: 40*Constants.standartFont))
+                    .font(ThemeManager.Fonts.GaeguBold(size: 40*Constants.standartFont))
                     .frame(maxWidth: .infinity)
             }
             Picker("",selection: $recordViewModel.selectedType,
@@ -59,15 +58,15 @@ struct RecordView: View {
                         Spacer()
                         Text("\(index+1)")
                             .foregroundColor(ThemeManager.Colors.prColor06)
-                            .font(.custom("Chalkboard SE", size: 50*Constants.standartFont))
+                            .font(ThemeManager.Fonts.Chalkboard(size: 50*Constants.standartFont))
                             .padding(.bottom, 5*Constants.standardHeight)
                         Spacer()
                         Text(record.value(forKey: "record") as? String ?? "Unknown Record")
-                            .font(.system(size: 30*Constants.standartFont, weight: .regular, design: .rounded))
-                            .foregroundColor(Color.blue)
+                            .font(ThemeManager.Fonts.Chalkboard(size: 40*Constants.standartFont))
+                            .foregroundColor(ThemeManager.Colors.prColor05)
                         Spacer()
                         Text(recordViewModel.formatDate(record.value(forKey: "date") as? Date))
-                            .font(.system(size: 20*Constants.standartFont, weight: .regular, design: .rounded))
+                            .font(ThemeManager.Fonts.GaeguRegular(size: 20*Constants.standartFont))
                         Spacer()
                     }
                     .listRowBackground(ThemeManager.Colors.bgColor)

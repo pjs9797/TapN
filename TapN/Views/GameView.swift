@@ -37,14 +37,14 @@ struct GameView: View {
                         }
                         Text(gameViewModel.selectedType)
                             .foregroundColor(ThemeManager.Colors.prColor06)
-                            .font(.custom("Chalkboard SE", size: 50*Constants.standartFont))
+                            .font(ThemeManager.Fonts.Chalkboard(size: 50*Constants.standartFont))
                             .frame(maxWidth: .infinity)
                     }
                     
                     Spacer()
                     
                     Text(gameViewModel.timerString)
-                        .font(.system(size: 40*Constants.standartFont, weight: .regular, design: .rounded))
+                        .font(ThemeManager.Fonts.Chalkboard(size: 40*Constants.standartFont))
                         .foregroundColor(.blue)
                     
                     Spacer()
@@ -57,7 +57,7 @@ struct GameView: View {
                                 }
                             }) {
                                 Text("\(gameViewModel.gameTiles[index].number)")
-                                    .font(.system(size: 40*Constants.standartFont, weight: .regular, design: .rounded))
+                                    .font(ThemeManager.Fonts.GaeguBold(size: 50*Constants.standartFont))
                                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                             }
                             .frame(width: gameViewModel.cellSize(for: UIScreen.main.bounds.width), height: gameViewModel.cellSize(for: 500*Constants.standardHeight))
@@ -83,7 +83,7 @@ struct GameView: View {
                         }
                         .buttonStyle(RefreshButtonStyle())
                         Spacer()
-                        Button("Play") {
+                        Button(LocalizedStringKey("시작하기")) {
                             gameViewModel.startGame()
                         }
                         .buttonStyle(PlayButtonStyle())

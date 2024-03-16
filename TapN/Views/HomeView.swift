@@ -9,7 +9,7 @@ struct HomeView: View {
             VStack(spacing: 0) {
                 Text("Tap N")
                     .foregroundColor(ThemeManager.Colors.prColor06)
-                    .font(.custom("Chalkboard SE", size: 50*Constants.standartFont))
+                    .font(ThemeManager.Fonts.Chalkboard(size: 50*Constants.standartFont))
                     .frame(maxWidth: .infinity, alignment: .center)
                 Spacer().frame(height: 40*Constants.standardHeight)
                 ThemeManager.Images.logo
@@ -35,7 +35,7 @@ struct HomeView: View {
                 Spacer()
                     .frame(height: 60*Constants.standardHeight)
                 NavigationLink(destination: GameView(gameViewModel: GameViewModel(selectedType: homeViewModel.selectedType ?? "Unknown", context: managedObjectContext))) {
-                    Text("시작하기")
+                    Text(LocalizedStringKey("시작하기"))
                         .modifier(StartTextStyle(isEnabled: homeViewModel.isStartButtonEnabled))
                 }
                 .disabled(!homeViewModel.isStartButtonEnabled)

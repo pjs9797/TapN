@@ -7,7 +7,7 @@ struct TypeButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         let isSelected = viewModel.selectedType == type
         configuration.label
-            .font(.system(size: 24*Constants.standartFont, weight: .regular, design: .rounded))
+            .font(ThemeManager.Fonts.GaeguRegular(size: 30*Constants.standartFont))
             .frame(width: 200*Constants.standardWidth, height: 50*Constants.standardHeight)
             .background(isSelected ? ThemeManager.Colors.prColor04 : Color.white)
             .foregroundColor(isSelected ? Color.white : ThemeManager.Colors.prColor06)

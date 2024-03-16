@@ -3,7 +3,7 @@ import SwiftUI
 struct PlayButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(.system(size: 30*Constants.standartFont, weight: .regular, design: .rounded))
+            .font(ThemeManager.Fonts.GaeguBold(size: 30*Constants.standartFont))
             .frame(width: 250*Constants.standardWidth, height: 50*Constants.standardHeight)
             .background(ThemeManager.Colors.prColor05)
             .foregroundColor(Color.white)

@@ -18,4 +18,22 @@ struct ThemeManager {
         static let record = Image("record")
         static let refresh = Image("refresh")
     }
+    
+    struct Fonts {
+        static func Chalkboard(size: CGFloat) -> Font {
+            return .custom("Chalkboard SE", size: size)
+        }
+        
+        static func GaeguBold(size: CGFloat) -> Font {
+            return .custom("Gaegu-Bold", size: size)
+        }
+        
+        static func GaeguLight(size: CGFloat) -> Font {
+            return .custom("Gaegu-Light", size: size)
+        }
+        
+        static func GaeguRegular(size: CGFloat) -> Font {
+            return .custom("Gaegu-Regular", size: size)
+        }
+    }
 }
