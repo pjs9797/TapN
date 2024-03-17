@@ -3,11 +3,9 @@ import SwiftUI
 struct RecordView: View {
     @Environment(\.managedObjectContext) private var managedObjectContext
     @StateObject private var recordViewModel = RecordViewModel()
-    @Environment(\.presentationMode) var presentationMode
     
     init() {
         UISegmentedControl.appearance().selectedSegmentTintColor = UIColor(named: "prColor06")
-        
         let attributes: [NSAttributedString.Key:Any] = [
             .foregroundColor : UIColor.white,
             .font: UIFont(name: "Chalkboard SE", size: 18*Constants.standartFont)
@@ -19,17 +17,8 @@ struct RecordView: View {
         VStack(spacing: 0){
             ZStack{
                 HStack(alignment: .center){
-                    Button(action: {
-                        self.presentationMode.wrappedValue.dismiss()
-                    }) {
-                        ThemeManager.Images.back
-                            .renderingMode(.template)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 35*Constants.standardHeight, height: 35*Constants.standardHeight)
-                            .foregroundColor(ThemeManager.Colors.prColor06)
-                    }
-                    .padding(.leading, 20*Constants.standardWidth)
+                    BackButton()
+                        .padding(.top, -13*Constants.standardHeight)
                     Spacer()
                 }
                 Text(LocalizedStringKey("랭킹"))

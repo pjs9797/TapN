@@ -22,6 +22,10 @@
 		312BF5BA2BA5CFAA000FB5EE /* Gaegu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 312BF5B72BA5CFAA000FB5EE /* Gaegu-Bold.ttf */; };
 		312BF5BB2BA5CFAA000FB5EE /* Gaegu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 312BF5B82BA5CFAA000FB5EE /* Gaegu-Light.ttf */; };
 		312BF5BC2BA5CFAA000FB5EE /* Gaegu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 312BF5B92BA5CFAA000FB5EE /* Gaegu-Regular.ttf */; };
+		312BF5C02BA6B282000FB5EE /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF5BF2BA6B282000FB5EE /* SettingView.swift */; };
+		312BF5C32BA6B844000FB5EE /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF5C22BA6B844000FB5EE /* BackButton.swift */; };
+		312BF5C52BA6B8DA000FB5EE /* RightNavItemLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF5C42BA6B8DA000FB5EE /* RightNavItemLink.swift */; };
+		312BF5C72BA6C8B3000FB5EE /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF5C62BA6C8B3000FB5EE /* PrivacyPolicyView.swift */; };
 		31C2663E2B9EFE5A00699A23 /* TapNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C2663D2B9EFE5A00699A23 /* TapNApp.swift */; };
 		31C266402B9EFE5A00699A23 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C2663F2B9EFE5A00699A23 /* HomeView.swift */; };
 		31C266422B9EFE5B00699A23 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C266412B9EFE5B00699A23 /* ColorAssets.xcassets */; };
@@ -57,6 +61,10 @@
 		312BF5B72BA5CFAA000FB5EE /* Gaegu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gaegu-Bold.ttf"; path = "../../../../../Downloads/Gaegu/Gaegu-Bold.ttf"; sourceTree = "<group>"; };
 		312BF5B82BA5CFAA000FB5EE /* Gaegu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gaegu-Light.ttf"; path = "../../../../../Downloads/Gaegu/Gaegu-Light.ttf"; sourceTree = "<group>"; };
 		312BF5B92BA5CFAA000FB5EE /* Gaegu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gaegu-Regular.ttf"; path = "../../../../../Downloads/Gaegu/Gaegu-Regular.ttf"; sourceTree = "<group>"; };
+		312BF5BF2BA6B282000FB5EE /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		312BF5C22BA6B844000FB5EE /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		312BF5C42BA6B8DA000FB5EE /* RightNavItemLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightNavItemLink.swift; sourceTree = "<group>"; };
+		312BF5C62BA6C8B3000FB5EE /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		31C2663A2B9EFE5A00699A23 /* TapN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C2663D2B9EFE5A00699A23 /* TapNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapNApp.swift; sourceTree = "<group>"; };
 		31C2663F2B9EFE5A00699A23 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -93,6 +101,8 @@
 				31C266592BA05ED600699A23 /* GameView.swift */,
 				312BF5892BA29E6D000FB5EE /* SuccessPopupView.swift */,
 				312BF58B2BA2BAE5000FB5EE /* RecordView.swift */,
+				312BF5BF2BA6B282000FB5EE /* SettingView.swift */,
+				312BF5C62BA6C8B3000FB5EE /* PrivacyPolicyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -140,6 +150,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		312BF5C12BA6B829000FB5EE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				312BF5C22BA6B844000FB5EE /* BackButton.swift */,
+				312BF5C42BA6B8DA000FB5EE /* RightNavItemLink.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		31C266312B9EFE5A00699A23 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +182,7 @@
 				31C266562B9F2FB000699A23 /* Utility */,
 				31C2664B2B9EFFC400699A23 /* Resource */,
 				31C266612BA0950D00699A23 /* ButtonStyle */,
+				312BF5C12BA6B829000FB5EE /* Components */,
 				312BF5862BA29E25000FB5EE /* Views */,
 				312BF5872BA29E30000FB5EE /* ViewModels */,
 				312BF5882BA29E4A000FB5EE /* Models */,
@@ -291,7 +311,10 @@
 				312BF5A82BA2E029000FB5EE /* TypeThree+CoreDataClass.swift in Sources */,
 				31C2665C2BA05EDF00699A23 /* GameViewModel.swift in Sources */,
 				312BF5A92BA2E029000FB5EE /* TypeThree+CoreDataProperties.swift in Sources */,
+				312BF5C72BA6C8B3000FB5EE /* PrivacyPolicyView.swift in Sources */,
+				312BF5C52BA6B8DA000FB5EE /* RightNavItemLink.swift in Sources */,
 				31C266532B9F138E00699A23 /* StartButtonStyle.swift in Sources */,
+				312BF5C32BA6B844000FB5EE /* BackButton.swift in Sources */,
 				312BF58F2BA2BCD8000FB5EE /* GameData.xcdatamodeld in Sources */,
 				31C266632BA0952500699A23 /* PlayButtonStyle.swift in Sources */,
 				312BF5A72BA2E029000FB5EE /* TypeTwo+CoreDataProperties.swift in Sources */,
@@ -309,6 +332,7 @@
 				31C2663E2B9EFE5A00699A23 /* TapNApp.swift in Sources */,
 				31C2665A2BA05ED600699A23 /* GameView.swift in Sources */,
 				31C266512B9F137200699A23 /* TypeButtonStyle.swift in Sources */,
+				312BF5C02BA6B282000FB5EE /* SettingView.swift in Sources */,
 				312BF5912BA2BD6F000FB5EE /* GameDataManager.swift in Sources */,
 				312BF5A42BA2E029000FB5EE /* TypeOne+CoreDataClass.swift in Sources */,
 			);

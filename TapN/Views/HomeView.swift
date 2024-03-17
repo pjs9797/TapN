@@ -7,10 +7,16 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                Text("Tap N")
-                    .foregroundColor(ThemeManager.Colors.prColor06)
-                    .font(ThemeManager.Fonts.Chalkboard(size: 50*Constants.standartFont))
-                    .frame(maxWidth: .infinity, alignment: .center)
+                ZStack{
+                    HStack(alignment: .center){
+                        Spacer()
+                        RightNavItemLink(destination: SettingView(), image: ThemeManager.Images.setting)
+                    }
+                    Text("Tap N")
+                        .foregroundColor(ThemeManager.Colors.prColor06)
+                        .font(ThemeManager.Fonts.Chalkboard(size: 50*Constants.standartFont))
+                        .frame(maxWidth: .infinity, alignment: .center)
+                }
                 Spacer().frame(height: 40*Constants.standardHeight)
                 ThemeManager.Images.logo
                     .resizable()
@@ -22,8 +28,7 @@ struct HomeView: View {
                     Button("1 To 9") {
                         homeViewModel.updateSelection(to: "1 To 9")
                     }.buttonStyle(TypeButtonStyle(viewModel: homeViewModel, type: "1 To 9"))
-                    
-                    
+    
                     Button("1 To 16") {
                         homeViewModel.updateSelection(to: "1 To 16")
                     }.buttonStyle(TypeButtonStyle(viewModel: homeViewModel, type: "1 To 16"))

@@ -3,3 +3,8 @@
 "성공!" = "Success!";
 "기록" = "Record";
 "확인" = "OK";
+"설정" = "Setting";
+"버전" = "Version";
+"개인정보 처리방침" = "Privacy Policy";
+"개인정보 처리방침 설명" = "Privacy Policy\n\nTapN does not collect or store any personal information from its users.\n\n1. Information Collection and Use\nTapN does not collect any personal information during the gameplay or at any other time. This includes no collection or storage of connection data, location information, device information, or usage records.\n\n2. Game Records\nThe gameplay records are stored locally on the device and are solely used for in-game ranking and personal progress purposes. These records are removed when the user uninstalls the app and are not backed up to servers or shared with any third parties.\n\n3. Sharing with Third Parties\nTapN does not share any game data or any other information with third parties.\n\n4. Legal Requirements\nExcept when required by law or to comply with a legal process, TapN will not disclose any personal information of its users.\n\n5. Changes to Our Privacy Policy\nThis Privacy Policy may change in the future. Any changes will be clearly communicated to the users.\n\n6. Contact Information\nIf you have any questions or concerns about this Privacy Policy, please contact us at 1997pjs@naver.com.\n\nThis policy is effective as of 2024/03/18.";;
+

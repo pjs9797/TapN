@@ -3,7 +3,6 @@ import SwiftUI
 struct GameView: View {
     @Environment(\.managedObjectContext) private var managedObjectContext
     @StateObject var gameViewModel: GameViewModel
-    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         GeometryReader { geometry in
@@ -11,29 +10,9 @@ struct GameView: View {
                 VStack {
                     ZStack{
                         HStack(alignment: .center){
-                            Button(action: {
-                                self.presentationMode.wrappedValue.dismiss()
-                            }) {
-                                ThemeManager.Images.back
-                                    .renderingMode(.template)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 35*Constants.standardHeight, height: 35*Constants.standardHeight)
-                                    .foregroundColor(ThemeManager.Colors.prColor06)
-                            }
-                            .padding(.leading, 20)
-                            .padding(.top, 13*Constants.standardHeight)
+                            BackButton()
                             Spacer()
-                            NavigationLink(destination: RecordView()) {
-                                ThemeManager.Images.record
-                                    .renderingMode(.template)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 35*Constants.standardHeight, height: 35*Constants.standardHeight)
-                                    .foregroundColor(ThemeManager.Colors.prColor06)
-                                    .padding(.trailing, 20)
-                                    .padding(.top, 13*Constants.standardHeight)
-                            }
+                            RightNavItemLink(destination: RecordView(), image: ThemeManager.Images.record)
                         }
                         Text(gameViewModel.selectedType)
                             .foregroundColor(ThemeManager.Colors.prColor06)
