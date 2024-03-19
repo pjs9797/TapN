@@ -19,13 +19,13 @@
 		312BF5A92BA2E029000FB5EE /* TypeThree+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF5A32BA2E029000FB5EE /* TypeThree+CoreDataProperties.swift */; };
 		312BF5AB2BA2E30E000FB5EE /* RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF5AA2BA2E30E000FB5EE /* RecordViewModel.swift */; };
 		312BF5AF2BA41355000FB5EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 312BF5B12BA41355000FB5EE /* Localizable.strings */; };
-		312BF5BA2BA5CFAA000FB5EE /* Gaegu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 312BF5B72BA5CFAA000FB5EE /* Gaegu-Bold.ttf */; };
-		312BF5BB2BA5CFAA000FB5EE /* Gaegu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 312BF5B82BA5CFAA000FB5EE /* Gaegu-Light.ttf */; };
-		312BF5BC2BA5CFAA000FB5EE /* Gaegu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 312BF5B92BA5CFAA000FB5EE /* Gaegu-Regular.ttf */; };
 		312BF5C02BA6B282000FB5EE /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF5BF2BA6B282000FB5EE /* SettingView.swift */; };
 		312BF5C32BA6B844000FB5EE /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF5C22BA6B844000FB5EE /* BackButton.swift */; };
 		312BF5C52BA6B8DA000FB5EE /* RightNavItemLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF5C42BA6B8DA000FB5EE /* RightNavItemLink.swift */; };
 		312BF5C72BA6C8B3000FB5EE /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BF5C62BA6C8B3000FB5EE /* PrivacyPolicyView.swift */; };
+		312BF5C92BA9A0E7000FB5EE /* Gaegu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 312BF5C82BA9A0E7000FB5EE /* Gaegu-Bold.ttf */; };
+		312BF5CB2BA9A0ED000FB5EE /* Gaegu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 312BF5CA2BA9A0ED000FB5EE /* Gaegu-Light.ttf */; };
+		312BF5CD2BA9A0F3000FB5EE /* Gaegu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 312BF5CC2BA9A0F3000FB5EE /* Gaegu-Regular.ttf */; };
 		31C2663E2B9EFE5A00699A23 /* TapNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C2663D2B9EFE5A00699A23 /* TapNApp.swift */; };
 		31C266402B9EFE5A00699A23 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C2663F2B9EFE5A00699A23 /* HomeView.swift */; };
 		31C266422B9EFE5B00699A23 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C266412B9EFE5B00699A23 /* ColorAssets.xcassets */; };
@@ -58,13 +58,13 @@
 		312BF5B02BA41355000FB5EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		312BF5B22BA41381000FB5EE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		312BF5B32BA5C7BE000FB5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		312BF5B72BA5CFAA000FB5EE /* Gaegu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gaegu-Bold.ttf"; path = "../../../../../Downloads/Gaegu/Gaegu-Bold.ttf"; sourceTree = "<group>"; };
-		312BF5B82BA5CFAA000FB5EE /* Gaegu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gaegu-Light.ttf"; path = "../../../../../Downloads/Gaegu/Gaegu-Light.ttf"; sourceTree = "<group>"; };
-		312BF5B92BA5CFAA000FB5EE /* Gaegu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gaegu-Regular.ttf"; path = "../../../../../Downloads/Gaegu/Gaegu-Regular.ttf"; sourceTree = "<group>"; };
 		312BF5BF2BA6B282000FB5EE /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		312BF5C22BA6B844000FB5EE /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		312BF5C42BA6B8DA000FB5EE /* RightNavItemLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightNavItemLink.swift; sourceTree = "<group>"; };
 		312BF5C62BA6C8B3000FB5EE /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		312BF5C82BA9A0E7000FB5EE /* Gaegu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaegu-Bold.ttf"; sourceTree = "<group>"; };
+		312BF5CA2BA9A0ED000FB5EE /* Gaegu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaegu-Light.ttf"; sourceTree = "<group>"; };
+		312BF5CC2BA9A0F3000FB5EE /* Gaegu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaegu-Regular.ttf"; sourceTree = "<group>"; };
 		31C2663A2B9EFE5A00699A23 /* TapN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C2663D2B9EFE5A00699A23 /* TapNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapNApp.swift; sourceTree = "<group>"; };
 		31C2663F2B9EFE5A00699A23 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -143,9 +143,9 @@
 		312BF5B62BA5CFA1000FB5EE /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				312BF5B72BA5CFAA000FB5EE /* Gaegu-Bold.ttf */,
-				312BF5B82BA5CFAA000FB5EE /* Gaegu-Light.ttf */,
-				312BF5B92BA5CFAA000FB5EE /* Gaegu-Regular.ttf */,
+				312BF5CC2BA9A0F3000FB5EE /* Gaegu-Regular.ttf */,
+				312BF5CA2BA9A0ED000FB5EE /* Gaegu-Light.ttf */,
+				312BF5C82BA9A0E7000FB5EE /* Gaegu-Bold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -291,11 +291,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				312BF5BA2BA5CFAA000FB5EE /* Gaegu-Bold.ttf in Resources */,
+				312BF5C92BA9A0E7000FB5EE /* Gaegu-Bold.ttf in Resources */,
 				31C266452B9EFE5B00699A23 /* Preview Assets.xcassets in Resources */,
-				312BF5BC2BA5CFAA000FB5EE /* Gaegu-Regular.ttf in Resources */,
+				312BF5CD2BA9A0F3000FB5EE /* Gaegu-Regular.ttf in Resources */,
 				312BF5AF2BA41355000FB5EE /* Localizable.strings in Resources */,
-				312BF5BB2BA5CFAA000FB5EE /* Gaegu-Light.ttf in Resources */,
+				312BF5CB2BA9A0ED000FB5EE /* Gaegu-Light.ttf in Resources */,
 				31C266422B9EFE5B00699A23 /* ColorAssets.xcassets in Resources */,
 				31C2664D2B9F003500699A23 /* ImageAssets.xcassets in Resources */,
 			);
@@ -498,9 +498,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jungsun.TapN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -528,9 +531,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jungsun.TapN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
