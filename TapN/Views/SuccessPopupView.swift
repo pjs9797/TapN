@@ -1,12 +1,13 @@
 import SwiftUI
 
 struct SuccessPopupView: View {
+    @EnvironmentObject var languageManager: LanguageManager
     @ObservedObject var gameViewModel: GameViewModel
     
     var body: some View {
         VStack(spacing: 10*Constants.standardHeight) {
             Spacer().frame(height: 10*Constants.standardHeight)
-            Text(LocalizedStringKey("성공!"))
+            Text(languageManager.localizedString(forKey: "성공!"))
                 .font(ThemeManager.Fonts.GaeguBold(size: 50*Constants.standartFont))
                 .foregroundColor(ThemeManager.Colors.prColor06)
             Text("\(gameViewModel.timerString)")
@@ -16,7 +17,7 @@ struct SuccessPopupView: View {
                 gameViewModel.resetGame()
                 gameViewModel.gameEnded = false
             }){
-                Text(LocalizedStringKey("확인"))
+                Text(languageManager.localizedString(forKey: "확인"))
                     .font(ThemeManager.Fonts.GaeguRegular(size: 30*Constants.standartFont))
                     .foregroundColor(Color.white)
             }

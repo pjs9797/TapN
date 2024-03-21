@@ -2,6 +2,7 @@ import SwiftUI
 
 struct RecordView: View {
     @Environment(\.managedObjectContext) private var managedObjectContext
+    @EnvironmentObject var languageManager: LanguageManager
     @StateObject private var recordViewModel = RecordViewModel()
     
     init() {
@@ -21,7 +22,7 @@ struct RecordView: View {
                         .padding(.top, -13*Constants.standardHeight)
                     Spacer()
                 }
-                Text(LocalizedStringKey("랭킹"))
+                Text(languageManager.localizedString(forKey: "랭킹"))
                     .foregroundColor(ThemeManager.Colors.prColor06)
                     .font(ThemeManager.Fonts.GaeguBold(size: 40*Constants.standartFont))
                     .frame(maxWidth: .infinity)

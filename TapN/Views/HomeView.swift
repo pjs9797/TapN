@@ -2,52 +2,52 @@ import SwiftUI
 
 struct HomeView: View {
     @Environment(\.managedObjectContext) private var managedObjectContext
+    @EnvironmentObject var languageManager: LanguageManager
     @StateObject private var homeViewModel = HomeViewViewModel()
     
     var body: some View {
-        NavigationView {
-            VStack(spacing: 0) {
-                ZStack{
-                    HStack(alignment: .center){
-                        Spacer()
-                        RightNavItemLink(destination: SettingView(), image: ThemeManager.Images.setting)
-                    }
-                    Text("Tap N")
-                        .foregroundColor(ThemeManager.Colors.prColor06)
-                        .font(ThemeManager.Fonts.Chalkboard(size: 50*Constants.standartFont))
-                        .frame(maxWidth: .infinity, alignment: .center)
+        VStack(spacing: 0) {
+            ZStack{
+                HStack(alignment: .center){
+                    Spacer()
+                    RightNavItemLink(destination: SettingView(), image: ThemeManager.Images.setting)
                 }
-                Spacer().frame(height: 40*Constants.standardHeight)
-                ThemeManager.Images.logo
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 200*Constants.standardWidth, height: 200*Constants.standardHeight)
-                Spacer()
-                    .frame(height: 40*Constants.standardHeight)
-                VStack(spacing: 30*Constants.standardWidth) {
-                    Button("1 To 9") {
-                        homeViewModel.updateSelection(to: "1 To 9")
-                    }.buttonStyle(TypeButtonStyle(viewModel: homeViewModel, type: "1 To 9"))
-    
-                    Button("1 To 16") {
-                        homeViewModel.updateSelection(to: "1 To 16")
-                    }.buttonStyle(TypeButtonStyle(viewModel: homeViewModel, type: "1 To 16"))
-                    
-                    Button("1 To 25") {
-                        homeViewModel.updateSelection(to: "1 To 25")
-                    }.buttonStyle(TypeButtonStyle(viewModel: homeViewModel, type: "1 To 25"))
-                }
-                Spacer()
-                    .frame(height: 60*Constants.standardHeight)
-                NavigationLink(destination: GameView(gameViewModel: GameViewModel(selectedType: homeViewModel.selectedType ?? "Unknown", context: managedObjectContext))) {
-                    Text(LocalizedStringKey("시작하기"))
-                        .modifier(StartTextStyle(isEnabled: homeViewModel.isStartButtonEnabled))
-                }
-                .disabled(!homeViewModel.isStartButtonEnabled)
-                Spacer()
+                Text("Tap N")
+                    .foregroundColor(ThemeManager.Colors.prColor06)
+                    .font(ThemeManager.Fonts.Chalkboard(size: 50*Constants.standartFont))
+                    .frame(maxWidth: .infinity, alignment: .center)
             }
-            .background(ThemeManager.Colors.bgColor)
+            Spacer().frame(height: 40*Constants.standardHeight)
+            ThemeManager.Images.logo
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 200*Constants.standardWidth, height: 200*Constants.standardHeight)
+            Spacer()
+                .frame(height: 40*Constants.standardHeight)
+            VStack(spacing: 30*Constants.standardWidth) {
+                Button("1 To 9") {
+                    homeViewModel.updateSelection(to: "1 To 9")
+                }.buttonStyle(TypeButtonStyle(viewModel: homeViewModel, type: "1 To 9"))
+                
+                Button("1 To 16") {
+                    homeViewModel.updateSelection(to: "1 To 16")
+                }.buttonStyle(TypeButtonStyle(viewModel: homeViewModel, type: "1 To 16"))
+                
+                Button("1 To 25") {
+                    homeViewModel.updateSelection(to: "1 To 25")
+                }.buttonStyle(TypeButtonStyle(viewModel: homeViewModel, type: "1 To 25"))
+            }
+            Spacer()
+                .frame(height: 60*Constants.standardHeight)
+            NavigationLink(destination: GameView(gameViewModel: GameViewModel(selectedType: homeViewModel.selectedType ?? "Unknown", context: managedObjectContext))) {
+                Text(languageManager.localizedString(forKey: "시작하기"))
+                    .modifier(StartTextStyle(isEnabled: homeViewModel.isStartButtonEnabled))
+            }
+            .disabled(!homeViewModel.isStartButtonEnabled)
+            Spacer()
         }
+        .background(ThemeManager.Colors.bgColor)
+        .navigationBarHidden(true)
     }
 }
 

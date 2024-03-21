@@ -18,6 +18,7 @@ struct ThemeManager {
         static let right = Image("right")
         static let record = Image("record")
         static let refresh = Image("refresh")
+        static let check = Image("check")
     }
     
     struct Fonts {

@@ -52,7 +52,8 @@ class GameViewModel: ObservableObject {
     }
     
     func resetGame() {
-        stopGame()
+        gameStarted = false
+        timer?.cancel()
         timerString = "00:00:00"
         startTime = nil
         

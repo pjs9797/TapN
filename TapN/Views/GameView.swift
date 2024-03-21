@@ -2,6 +2,7 @@ import SwiftUI
 
 struct GameView: View {
     @Environment(\.managedObjectContext) private var managedObjectContext
+    @EnvironmentObject var languageManager: LanguageManager
     @StateObject var gameViewModel: GameViewModel
     
     var body: some View {
@@ -62,7 +63,7 @@ struct GameView: View {
                         }
                         .buttonStyle(RefreshButtonStyle())
                         Spacer()
-                        Button(LocalizedStringKey("시작하기")) {
+                        Button(languageManager.localizedString(forKey: "게임하기")) {
                             gameViewModel.startGame()
                         }
                         .buttonStyle(PlayButtonStyle())
