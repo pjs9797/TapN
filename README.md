@@ -54,7 +54,7 @@ TapN은 당신의 집중력과 반응 속도를 시험할 수 있는 새롭고 �
 
 ### 랭킹
 <img src="https://github.com/PromiseApp/iOS/assets/99011004/2d0e659e-e879-4c93-9b87-8772a8297e3a" width="200">
-<img src="[https://github.com/PromiseApp/iOS/assets/99011004/7f1fe225-d45a-460f-aa5f-0bda42c2eac7](https://github.com/PromiseApp/iOS/assets/99011004/3c872cc7-44cc-4830-9b62-cc36cc3c40d6)" width="200">
+<img src="https://github.com/PromiseApp/iOS/assets/99011004/3c872cc7-44cc-4830-9b62-cc36cc3c40d6" width="200">
 
 - 모드별로 1~100등까지의 기록 저장
 
